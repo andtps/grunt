@@ -15,12 +15,17 @@ module.exports = function (grunt) {
         },
       },
     },
+    uglify: {
+      target: {
+        files: {
+          "public/script/main.min.js": "src/script/main.js",
+        },
+      },
+    },
   });
 
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-less");
-  grunt.loadNpmTasks("grunt-contrib-cssmin");
-  grunt.loadNpmTasks("grunt-contrib-watch");
 
-  grunt.registerTask("default", ["less"]);
+  grunt.registerTask("default", ["less", "uglify"]);
 };

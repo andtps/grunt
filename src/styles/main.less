@@ -1,9 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section__tittle__class {
+  padding: 30px;
+  font-size: 45px;
+  text-align: justify;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+
 header {
-  background-color: aqua;
+  background-color: black;
+  height: 90px;
+
+  .header__container__div {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      list-style: none;
+
+      .header__ul__li {
+        color: white;
+        padding: 20px;
+        font-size: 25px;
+
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.section__about {
+  text-align: center;
+  .section__about__content {
+    display: grid;
+    grid-template-columns: 30% 65%;
+    gap: 3%;
+    .section__about__txt {
+      p {
+        font-size: 25px;
+        text-align: justify;
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+    }
+    .section_about__img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.section__testemunho__clientes {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 4.3%;
+  .testemunho {
+    .testemunho__img {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 2% auto;
+      border-radius: 10px;
+    }
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+}
+
+.form__section {
+  form {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    display: ;
+    input {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      height: 150px;
+      resize: none;
+    }
+  }
+  button {
+    padding: 10px;
+    display: flex;
+    margin: 0 auto 20px auto;
+    width: 60%;
+  }
+}
+
+footer {
+  background-color: black;
+  height: 400px;
 }

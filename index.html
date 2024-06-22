@@ -3,10 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="public/styles/main.css" />
+    <script src="src/script/main.js"></script>
     <title>EBAC</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="container">
+        <div class="header__container__div">
+          <div class="header__menu">
+            <ul>
+              <li class="header__ul__li">Sobre</li>
+              <li class="header__ul__li">Fale conosco</li>
+              <li class="header__ul__li">Endereço</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="section__about">
+          <div class="section__about__tittle">
+            <h2 class="section__tittle__class">QUEM SOMOS</h2>
+          </div>
+          <div class="section__about__content">
+            <div class="section__about__txt">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
+                beatae sapiente officia illo, aut nesciunt necessitatibus amet
+                explicabo fugit temporibus commodi, dolorum voluptas minima
+                reprehenderit modi quas repudiandae quia doloremque? Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Est beatae
+                sapiente officia illo, aut nesciunt necessitatibus amet
+                explicabo fugit temporibus commodi,
+              </p>
+            </div>
+            <div class="section_about__img">
+              <img src="src/img/Work.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="section__testemunho">
+          <div class="section__testemunho__tittle">
+            <h2 class="section__tittle__class">NOSSOS CLIENTES</h2>
+          </div>
+          <div class="section__testemunho__clientes">
+            <div class="testemunho">
+              <img
+                class="testemunho__img"
+                src="https://via.placeholder.com/300x300"
+                alt=""
+              />
+              <h3>Pedro Alvares</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                itaque quam consequuntur ab recusandae quo dolorum nesciunt
+                adipisci alias deleniti pariatur soluta ipsum odit, autem
+                commodi eveniet magnam neque amet?
+              </p>
+            </div>
+            <div class="testemunho">
+              <img
+                class="testemunho__img"
+                src="https://via.placeholder.com/300x300"
+                alt=""
+              />
+              <h3>Pedro Alvares</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                itaque quam consequuntur ab recusandae quo dolorum nesciunt
+                adipisci alias deleniti pariatur soluta ipsum odit, autem
+                commodi eveniet magnam neque amet?
+              </p>
+            </div>
+            <div class="testemunho">
+              <img
+                class="testemunho__img"
+                src="https://via.placeholder.com/300x300"
+                alt=""
+              />
+              <h3>Pedro Alvares</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                itaque quam consequuntur ab recusandae quo dolorum nesciunt
+                adipisci alias deleniti pariatur soluta ipsum odit, autem
+                commodi eveniet magnam neque amet?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form__section">
+        <div class="section__form__tittle">
+          <h2 class="section__tittle__class">MANDE UMA MENSAGEM</h2>
+        </div>
+        <div class="form__section">
+          <form id="form">
+            <input
+              class="inputs"
+              type="text"
+              id="nome"
+              placeholder="NOME COMPLETO"
+            />
+            <input class="inputs" type="email" id="email" placeholder="EMAIL" />
+            <textarea
+              class="inputs"
+              id="mensagem"
+              placeholder="SUA MENSAGEM"
+            ></textarea>
+          </form>
+          <button type="submit">ENVIAR</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
