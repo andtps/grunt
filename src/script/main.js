@@ -1,21 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const inputs = document.querySelectorAll(".inputs");
-  const form = document.querySelector("#form");
+let inputs = document.querySelectorAll(".inputs");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    let preencher = true;
-
-    inputs.forEach((input) => {
-      if (input.value.trim() === "") {
-        preencher = false;
-      }
-    });
-
-    if (!preencher) {
-      alert("Favor preencher todos os campos");
-    } else {
-      alert("Mensagem enviada");
+function verificarInputs() {
+  for (let input of inputs) {
+    if (input.value === "") {
+      alert("Preencher todos os campos");
+      return;
     }
+  }
+  alert("Mensagem enviada com sucesso");
+}
+
+document
+  .querySelector("button[type='submit']")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    verificarInputs();
   });
-});

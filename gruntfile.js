@@ -11,14 +11,14 @@ module.exports = function (grunt) {
           compress: true,
         },
         files: {
-          "public/styles/main.css": "src/styles/main.less",
+          "dist/styles/main.css": "src/styles/main.less",
         },
       },
     },
     uglify: {
       target: {
         files: {
-          "public/script/main.min.js": "src/script/main.js",
+          "dist/script/main.min.js": "src/script/main.js",
         },
       },
     },
